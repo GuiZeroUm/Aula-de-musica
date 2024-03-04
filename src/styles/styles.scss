@@ -1,3 +1,67 @@
+@use 'variaveis' as *;
+@use 'hero';
+@use 'cursos';
+@use 'footer';
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
 body {
-    background-color: red;
+    background-color: $corDeFundo;
+}
+
+.title--big {
+    color: #000;
+    font-size: 64px;
+
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+}
+
+span {
+    color: $corPrimaria;
+}
+
+.button {
+    background-color: $corPrimaria;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 2px 4px 0px rgb(0, 0, 0);
+    border: none;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($corPrimaria, 3%);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
 }

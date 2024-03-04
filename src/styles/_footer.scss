@@ -1,0 +1,58 @@
+.footer {
+    margin-top: 64px;
+    margin-bottom: 132px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: start;
+            margin-left: 20px;
+        }
+
+        &__content {
+            &__resume {
+                max-width: 260px;
+                
+                p {
+                    margin-top: 32px;
+                }
+            }
+
+            &__links {
+                .ul {
+                    
+
+                    &__li {
+                        margin-top: 32px;
+                    }
+                }
+            }
+
+            &__email {
+
+                @media (max-width: 768px) {
+                    margin-top: 32px;
+                }
+
+                .email {
+                    width: 100%;
+                    margin: 32px 0px;
+                    border: 2px solid #000;
+                    padding: 12px 60px;
+
+                    @media (max-width: 768px) {
+                        width: 80%;
+                    }
+                }
+
+                .button {
+                    padding: 10px 60px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@use 'variaveis' as *;
+
+.hero {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &__section {
+        margin-top: 20px;
+
+        &__riscos {
+            position: absolute;
+            left: 370px;
+            top: 90px;
+
+            @media (max-width: 768px) {
+                left: 290px;
+                top: 65px;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 24px;
+        }
+
+        &__seta {
+            position: absolute;
+            left: 150px;
+            top: 540px;
+
+            @media (max-width: 768px) {
+                width: 100px;
+                left: 140px;
+                top: 400px;
+            }
+        }
+    }
+}
